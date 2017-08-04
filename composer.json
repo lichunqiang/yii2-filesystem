@@ -1,37 +1,45 @@
 {
-    "name": "weyii/yii2-filesystem",
-    "type": "yii2-extension",
-    "description": "This extension provides a filesystem solution for Yii 2.",
-    "keywords": ["weyii", "yii2", "filesystem", "flysystem", "file", "storage", "qiniu"],
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/weyii/yii2-filesystem/issues",
-        "wiki": "https://github.com/weyii/yii2-filesystem/wiki",
-        "source": "https://github.com/weyii/yii2-filesystem"
+  "name": "light/yii2-filesystem",
+  "type": "yii2-extension",
+  "description": "This extension provides a filesystem solution for Yii 2.",
+  "keywords": ["weyii", "yii2", "filesystem", "flysystem", "file", "storage", "qiniu"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/weyii/yii2-filesystem/issues",
+    "wiki": "https://github.com/weyii/yii2-filesystem/wiki",
+    "source": "https://github.com/weyii/yii2-filesystem"
+  },
+  "authors": [
+    {
+      "name": "Long Zhang",
+      "email": "callme-z@qq.com",
+      "role": "Original developer"
     },
-    "authors": [
-        {
-            "name": "Long Zhang",
-            "email": "callme-z@qq.com"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "*",
-        "weyii/yii2-base": "*",
-
-        "league/flysystem": "~1.0"
-    },
-    "conflict": {
-        "qiniu/php-sdk": "<7.0",
-        "aliyuncs/oss-sdk-php": "<2.0"
-    },
-    "suggest": {
-        "qiniu/php-sdk": "七牛云存储SDK, 请使用'~7.0'以上版本.",
-        "aliyuncs/oss-sdk-php": "阿里云OSS存储SDK, 请使用'~2.0'以上版本"
-    },
-    "autoload": {
-        "psr-4": {
-            "weyii\\filesystem\\": ""
-        }
+    {
+      "name": "lichunqiang",
+      "email": "light-li@hotmail.com"
     }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0",
+    "league/flysystem": "~1.0"
+  },
+  "conflict": {
+    "qiniu/php-sdk": "<7.0",
+    "aliyuncs/oss-sdk-php": "<2.0"
+  },
+  "suggest": {
+    "qiniu/php-sdk": "七牛云存储SDK, 请使用'~7.0'以上版本.",
+    "aliyuncs/oss-sdk-php": "阿里云OSS存储SDK, 请使用'~2.0'以上版本"
+  },
+  "autoload": {
+    "psr-4": {
+      "light\\filesystem\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "light\\tests\\filesystem\\": "tests"
+    }
+  }
 }
